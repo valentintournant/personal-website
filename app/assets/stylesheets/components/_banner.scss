@@ -114,7 +114,6 @@ section .wave.wave4 {
   border: 2px solid white;
   border-radius: 60px;
   position: relative;
-  top: -100px;
 }
 
 .mouse::before {
@@ -138,5 +137,40 @@ section .wave.wave4 {
   to{
     opacity: 0;
     top: 150px;
+  }
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 574px) {
+  .mouse {
+    top: -140px !important;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 575px) {
+  .mouse {
+    top: -80px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .mouse {
+    top: -80px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .mouse {
+    top: -80px;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .mouse {
+    top: -80px;
   }
 }

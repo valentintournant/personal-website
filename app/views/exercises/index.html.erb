@@ -1,1 +1,25 @@
-<div>hello</div>
+<div class="container">
+<!-- Javascript-exercises -->
+  <div class="d-flex justify-content-center">
+    <h1>Exercises <i class="highlighted highlighted-javascript">JS</i>🤓</h1>
+  </div>
+<!-- End-Javascript-exercises -->
+</div>
+
+<ul>
+  <% @exercises.each do |exercises| %>
+    <li><%= exercises.name %></li>
+    <li><%= exercises.description %></li>
+    <li><%= exercises.number %></li>
+    <li><%= exercises.time %></li>
+    <li><%= exercises.category %></li>
+  <% end %>
+</ul>
+
+<!-- Other-exercice -->
+<div class="card-container">
+  <div class="d-flex justify-content-center">
+    <h1>In
+      <i class="highlighted highlighted-ruby"> progress </i>🤩</h1>
+  </div>
+</div>
