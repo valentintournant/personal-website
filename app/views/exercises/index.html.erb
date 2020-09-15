@@ -1,20 +1,33 @@
-<div class="container">
+
 <!-- Javascript-exercises -->
+<div class="container">
   <div class="d-flex justify-content-center">
     <h1>Exercises <i class="highlighted highlighted-javascript">JS</i>🤓</h1>
   </div>
-<!-- End-Javascript-exercises -->
 </div>
 
-<ul>
-  <% @exercises.each do |exercises| %>
-    <li><%= exercises.name %></li>
-    <li><%= exercises.description %></li>
-    <li><%= exercises.number %></li>
-    <li><%= exercises.time %></li>
-    <li><%= exercises.category %></li>
-  <% end %>
-</ul>
+  <div class="exercise-card">
+    <div class="badge">Hot</div>
+    <div class="exercise-tumb">
+      <%= image_tag "js-logo.png" %></div>
+    <div class="exercise-details">
+      <% @exercises.each do |exercises| %>
+        <span class="exercise-catagory"><%=exercises.category%></span>
+          <h4><a href=""><%= exercises.name %></a></h4>
+          <p><%= exercises.description %></p>
+            <div class="exercise-card-stats clearfix">
+          <div class="one-third">
+            <div class="stat"><%= exercises.number %><sup>st</sup></div>
+            <div class="stat-value">Training</div>
+          </div>
+          <div class="one-third">
+            <div class="stat"><%= exercises.time%></div>
+            <div class="stat-value">Minutes</div>
+          </div>
+      <% end %>
+    </div>
+  </div>
+</div>
 
 <!-- Other-exercice -->
 <div class="card-container">
@@ -23,3 +36,4 @@
       <i class="highlighted highlighted-ruby"> progress </i>🤩</h1>
   </div>
 </div>
+
