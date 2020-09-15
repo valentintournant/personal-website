@@ -1,0 +1,124 @@
+.exercise-card {
+    width: 250px;
+    position: relative;
+    box-shadow: 0 2px 7px #dfdfdf;
+    margin: 20px auto;
+    background: #fafafa;
+    border-radius: 25px;
+  }
+
+.badge {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    background: red;
+    color: #fff;
+    padding: 3px 10px;
+  }
+
+.exercise-tumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    padding: 10px;
+    background: #f6efd4;
+    border-top-left-radius : 25px;
+    border-top-right-radius : 25px;
+  }
+
+.exercise-tumb img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.exercise-details {
+    padding: 30px;
+}
+
+.exersice-category {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 18px;
+}
+
+.exercise-details h4 a {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    color: #363636;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.exercise-bottom-details {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.exercise-bottom-details div {
+    float: left;
+    width: 50%;
+}
+
+.exercise-card-stats {
+
+  color: #363636;
+
+  .one-third {
+    width: 50%;
+    float: left;
+    padding: 20px 15px;
+  }
+
+  sup {
+    position: absolute;
+    bottom: 4px;
+    font-size: 45%;
+    margin-left: 2px;
+    top: 0.5em;
+  }
+
+  .stat {
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .stat-value {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .no-border {
+    border-right: none;
+  }
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.slick-prev {
+  left: 100px;
+  z-index: 999;
+}
+
+.slick-next {
+  right: 100px;
+  z-index: 999;
+}
