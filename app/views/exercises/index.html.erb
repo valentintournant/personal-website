@@ -8,29 +8,30 @@
 
 
 <div class="cards">
-<% @exercises.each do |exercises| %>
+  <% @exercises.each do |exercise| %>
   <div class="exercise-card">
     <div class="badge">Hot</div>
     <div class="exercise-tumb">
-      <%= image_tag "js-logo.png" %></div>
+      <%= image_tag "js-logo.png" %>
+    </div>
     <div class="exercise-details">
-        <span class="exercise-category"><%=exercises.category%></span>
-          <h4><a href=""><%= exercises.name %></a></h4>
-          <p><%= exercises.description%></p>
-          <div class= "card-line-header-x"></div>
-            <div class="exercise-card-stats clearfix ">
-          <div class="one-third">
-            <div class="stat"><%= exercises.number %><sup>st</sup></div>
-            <div class="stat-value">Training</div>
-          </div>
-          <div class="one-third">
-            <div class="stat"><%= exercises.time%></div>
-            <div class="stat-value">Minutes</div>
-          </div>
+      <span class="exercise-category"><%=exercise.category%></span>
+      <h4><a href="exercises_js/exercise_<%=exercise.number%>.html"><%= exercise.name %></a></h4>
+      <p><%= exercise.description%></p>
+      <div class= "card-line-header-x"></div>
+      <div class="exercise-card-stats clearfix ">
+        <div class="one-third">
+          <div class="stat"><%= exercise.number %><sup>st</sup></div>
+          <div class="stat-value">Training</div>
+        </div>
+        <div class="one-third">
+          <div class="stat"><%= exercise.time%></div>
+          <div class="stat-value">Minutes</div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-<% end %>
+  <% end %>
 </div>
 
 <!-- Other-exercice -->

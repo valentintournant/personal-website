@@ -18,7 +18,7 @@ exercise_2_js = Exercise.create!(
   description: "Creation of a virtual drum kit that produces a sound when you press the associated key!",
   category: "Javascript",
   time: 20,
-  number: 1,
+  number: 2,
 )
 
 exercise_3_js = Exercise.create!(
@@ -26,7 +26,7 @@ exercise_3_js = Exercise.create!(
   description: "Creation of a virtual drum kit that produces a sound when you press the associated key!",
   category: "Javascript",
   time: 20,
-  number: 1,
+  number: 3,
 )
 
 puts "You have done #{Exercise.count} exercise"
