@@ -81,6 +81,7 @@ GEM
     dotenv-rails (2.7.6)
       dotenv (= 2.7.6)
       railties (>= 3.2)
+    ejs (1.1.1)
     erubi (1.9.0)
     execjs (2.7.0)
     ffi (1.13.1)
@@ -90,6 +91,9 @@ GEM
       activesupport (>= 4.2.0)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
+    jade-rails (1.9.2.0)
+      execjs
+      tilt
     jbuilder (2.10.1)
       activesupport (>= 5.0.0)
     listen (3.2.1)
@@ -224,7 +228,9 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   dotenv-rails
+  ejs
   font-awesome-sass
+  jade-rails (= 1.9.2)
   jbuilder (~> 2.7)
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)
