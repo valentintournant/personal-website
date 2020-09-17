@@ -9,7 +9,6 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
@@ -19,7 +18,7 @@
         <%= link_to "Exercises", exercises_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <%= link_to "Hire me!", "#", class: "nav-link" %>
+        <%= link_to "Hire me!", root_path, class: "nav-link" %>
       </li>
       <li class="nav-item dropdown">
         <%= image_tag "val.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
