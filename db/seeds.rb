@@ -13,20 +13,12 @@ exercise_1_js = Exercise.create!(
   number: 1,
 )
 
-exercise_2_js = Exercise.create!(
-  name: "test",
-  description: "Creation of a virtual drum kit that produces a sound when you press the associated key!",
+exercise_1_js = Exercise.create!(
+  name: "Strings Project",
+  description: "Creation of a name variations table that shows you some variations of the name you enter.",
   category: "Javascript",
-  time: 20,
+  time: 10,
   number: 2,
-)
-
-exercise_3_js = Exercise.create!(
-  name: "test",
-  description: "Creation of a virtual drum kit that produces a sound when you press the associated key!",
-  category: "Javascript",
-  time: 20,
-  number: 3,
 )
 
 puts "You have done #{Exercise.count} exercise"
