@@ -1,26 +1,38 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+a {
+  color: #03cbaf;
+  transition: transform 150ms ease-out;
+}
+a:active {
+  color: #fbbb19;
+}
+
 :root {
-    --light-gray: #EEEEEE;
-    --light-blue: #1B9CE2;
-    --dark: #333;
+  --light-gray: #eeeeee;
+  --light-blue: #1b9ce2;
+  --dark: #333;
 }
 
 body {
-    margin: 0;
-    background-color: var(--light-gray);
+  margin: 0;
+  background-color: var(--light-gray);
 }
 
 main {
-    margin: 20px;
+  margin: 20px;
 }
-
 
 nav {
-    background-color: #343a40;
-    color: white;
-    padding: 20px 30px;
+  background-color: #343a40;
+  color: white;
+  padding: 20px 30px;
 }
 nav h1 {
-    margin: 0;
+  margin: 0;
 }
 
 .textbox {
@@ -36,9 +48,9 @@ nav h1 {
 }
 
 .label {
-    font-weight: bold;
-    display: block;
-    margin: 15px 20px;
+  font-weight: bold;
+  display: block;
+  margin: 15px 20px;
 }
 
 .table-container {
@@ -56,15 +68,15 @@ table th {
   color: white;
   background-color: var(--dark);
   border-color: #454d55;
-  padding: .75rem;
+  padding: 0.75rem;
   vertical-align: middle;
 }
 table td {
   text-align: center;
-  padding: .75rem;
+  padding: 0.75rem;
 }
 table tr:nth-of-type(even) td {
-    background-color: rgba(0,0,0,.08);
+  background-color: rgba(0, 0, 0, 0.08);
 }
 
 .btn {
@@ -85,5 +97,5 @@ table tr:nth-of-type(even) td {
 }
 
 .failing {
-  color: #F44336;
+  color: #f44336;
 }
