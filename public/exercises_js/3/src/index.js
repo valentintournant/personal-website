@@ -11,7 +11,7 @@ import {
 const gradesForm = document.querySelector("#grades-form");
 const yourGrade = document.querySelector("#your-grade");
 
-const grades = [12, 19, 10, 4, 15, 9];
+const grades = [];
 
 const renderSecondTable = (grades) => {
   document.querySelector("#passing-grades").innerHTML = getPassingGrades(
