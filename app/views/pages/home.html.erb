@@ -1,53 +1,27 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to exercises_path, class: "navbar-brand" do %>
-    <%= image_tag "js-logo.png" %>
-    <%= image_tag "css.svg" %>
-    <%= image_tag "html.png" %>
-    <%= image_tag "ruby.png" %>
-  <% end %>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <%= link_to "Home", root_path, class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "Exercises", exercises_path, class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "Hire me!", root_path, class: "nav-link" %>
-      </li>
-      <li class="nav-item dropdown">
-        <%= image_tag "val.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <%= link_to "Log in", "#", class: "dropdown-item" %>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
-
-<!-- banner -->
-<div class="banner">
-  <section>
-    <div class="wave-background">
-      <div class="text-banner">
-        <h1>Hello</h1>
-        <h3>Welcome to my website to show you my skills trough exercises 💪 !</h3>
-        <div class="btn-container-y">
-        </div>
-      </div>
-      <div class="middle">
-    <div class="mouse">
+<section class="sec">
+  <header class="header">
+    <%=image_tag "val2.png", class: "avatar"%>
+      <ul>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Exercises", exercises_path %></li>
+        <li><%= link_to "Hire me!", hire_me_path %></li>
+      </ul>
+  </header>
+  <div class="content">
+    <div class="textBox">
+      <h2>That's What <br><span>I Code</span></h2>
+      <p>Welcome to my website to show you my skills trough exercises and my different projects 💪 !
+      <br> I am passionate about code, curious and on the lookout for all new software and technical news.</p>
+      <a href="">Clik me</a>
+    </div>
+    <div class="imgBox">
+      <%=image_tag "val2.png", class: "val"%>
     </div>
   </div>
-    </div>
-    <div class="wave wave1"></div>
-    <div class="wave wave2"></div>
-    <div class="wave wave3"></div>
-    <div class="wave wave4"></div>
-  </section>
-</div>
+  <ul class="thumb">
+      <li><%= image_tag "js.png" %></li>
+      <li><%= image_tag "css.png" %></li>
+      <li><%= image_tag "html.png" %></li>
+      <li><%= image_tag "ruby.png" %></li>
+  </ul>
+</section>
