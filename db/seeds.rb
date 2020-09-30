@@ -29,4 +29,12 @@ exercise_3_js = Exercise.create!(
   number: 3,
 )
 
+exercise_4_js = Exercise.create!(
+  name: "Inventory project",
+  description: "Creation of an inventory to practice classes. The aim is to better organize my code by grouping similar functionalities into a single class.",
+  category: "Javascript",
+  time: 15,
+  number: 4,
+)
+
 puts "You have done #{Exercise.count} exercise"
