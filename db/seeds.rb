@@ -15,7 +15,7 @@ exercise_1_js = Exercise.create!(
 
 exercise_2_js = Exercise.create!(
   name: "Strings Project",
-  description: "Creation of a name variations table that shows you some variations of the name you enter.",
+  description: "Creation of a name variations table that shows you some variations of the name you enter",
   category: "Javascript",
   time: 10,
   number: 2,
@@ -31,7 +31,7 @@ exercise_3_js = Exercise.create!(
 
 exercise_4_js = Exercise.create!(
   name: "Inventory project",
-  description: "Creation of an inventory to practice classes. The aim is to better organize my code by grouping similar functionalities into a single class.",
+  description: "Creation of an inventory to practice classes. The aim is to better organize my code by grouping similar functionalities into a single class",
   category: "Javascript",
   time: 15,
   number: 4,
