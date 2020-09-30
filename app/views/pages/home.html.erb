@@ -25,8 +25,16 @@
       <li class="logo" data-background="#ce422a"><%= image_tag "ruby.png" %></li>
   </ul>
   <ul class="sci">
-    <li><a href="https://github.com/valentintournant"><img <%= image_tag "github.png" %>></a></li>
-    <li><a href="https://www.linkedin.com/in/valentin-tournant/"><img <%=image_tag "linkedin.png"%>></a></li>
+    <li>
+      <%= link_to "https://github.com/valentintournant" do %>
+        <%= image_tag "github.png" %>
+      <% end %>
+    </li>
+    <li>
+      <%= link_to "https://www.linkedin.com/in/valentin-tournant/" do %>
+        <%= image_tag "linkedin.png" %>
+      <% end %>
+    </li>
   </ul>
 </section>
 
