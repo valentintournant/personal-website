@@ -152,32 +152,11 @@ header ul li a {
 
 // media queries
 
-// Smallest device
-// @media screen and (max-width: 575px) {
-//   .cards {
-//     grid-template-columns: 1fr;
-//   }
-// }
-
-// Small devices (landscape phones, 576px and up)
-// @media (min-width: 576px) {
-//   .cards {
-//     grid-template-columns: 1fr;
-//   }
-// }
-
-// Medium devices (tablets, 768px and up)
-// @media (min-width: 768px) {
-//   .cards {
-//     grid-template-columns: 1fr 1fr;
-//   }
-// }
-
-// Large devices (desktops, 992px and up)
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 
   section {
     padding: 40px;
+    padding-bottom: 120px;
   }
 
   header {
@@ -205,7 +184,7 @@ header ul li a {
     opacity: 0;
   }
 
-  header ul li a {
+    header ul li a {
     display: inline-block;
     color: #111;
     font-weight: 400;
@@ -213,6 +192,15 @@ header ul li a {
     text-decoration: none;
     font-size: 2em;
     margin: 10px 0;
+  }
+
+  header ul li a:hover {
+   color: #2a65b3;
+  }
+
+  header ul.active {
+    visibility: visible;
+    opacity: 1;
   }
 
   .toggleMenu {
@@ -227,6 +215,66 @@ header ul li a {
     cursor: pointer;
   }
 
+  .toggleMenu.active {
+    background: url(close.png);
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    filter: invert(1);
+  }
+
+  .content {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+
+  .content .textBox {
+    position: relative;
+    max-width: 100%;
+    padding-right: 20px;
+  }
+
+  .content .textBox h2 {
+    font-size: 3em;
+  }
+
+  .content .textBox a {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .content .imgBox {
+    width: 100%;
+    display: flex;
+    padding-right: 0;
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  .content .imgBox img {
+    max-width: 200px;
+  }
+
+  .thumb li img {
+    max-width: 40px;
+  }
+
+  .sci {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  background: #75b5e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+
+  .sci li img {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 

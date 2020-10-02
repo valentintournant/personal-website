@@ -14,12 +14,15 @@
 
   <body>
     <%= yield %>
-    <div class="footer">
-      <div class="footer-links">
-        <a href="https://github.com/valentintournant"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/valentin-tournant/"><i class="fab fa-linkedin"></i></a>
+
+    <% unless params[:action] == "home" %>
+      <div class="footer">
+        <div class="footer-links">
+          <a href="https://github.com/valentintournant"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/valentin-tournant/"><i class="fab fa-linkedin"></i></a>
+        </div>
       </div>
-    </div>
+    <% end %>
 
     <div class="footer-phone">
       <div class="footer-icons">
