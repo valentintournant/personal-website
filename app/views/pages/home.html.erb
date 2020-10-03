@@ -42,16 +42,41 @@
 </section>
 
 <section id="features" class="features">
-  <div class="container-features">
+  <div class="container">
     <div class="row">
       <div class="features-inner">
         <div class="features-content">
           <h3> I am here to provide you the most motivated developper</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt sapiente earum amet harum nam. A ad rem, accusantium sunt repudiandae, illo tempore dolore, itaque, dolores doloribus at facere sint quam?</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
           <div class="btn-row">
-            <a href="/"
-            > View quelque chose</a>
+            <a><%= link_to '#' do %>
+            View quelque chose <%= image_tag "arrow-right.svg" %>
+            <% end %></a>
           </div>
+        </div>
+        <div class="features-list">
+          <ul>
+            <li><%= image_tag 'fast-delivery.svg' %>
+              <h5>Fast delivery</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+            <li><%= image_tag '0-fees.svg' %>
+              <h5>$0 fees</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+            <li><%= image_tag 'no-credit-check.svg' %>
+              <h5>No credit check</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+            <li><%= image_tag 'chat-support' %>
+              <h5>Chat Support </h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+            <li><%= image_tag 'fixed-payment-option.svg' %>
+              <h5>Fixed payment option</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
