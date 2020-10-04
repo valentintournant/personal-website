@@ -295,15 +295,15 @@ header ul li a {
 
 .container {
   margin-top: 10vh;
+  padding-left: 0px;
   .features-inner {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    .features-content {
-      width: 33%;
-      @media (max-width: $widescreen) {
-        width: 40%;
+    column-gap: 150px;
+    @media (max-width: $tablet) {
+        flex-direction: column;
+        flex-wrap: wrap;
       }
+    .features-content {
       h3 {
         color: #2a65b3;
         font-size: 2.6rem;
@@ -311,33 +311,31 @@ header ul li a {
         margin: 0 0 35px;
       }
       p {
-        line-height: 1.8rem;
+        line-height: 1.5rem;
         font-weight: 300;
         color: #2a65b3;
-        margin-bottom: 88px;
-        @media (max-width: $widescreen) {
-          padding-right: 60px;
-        }
+        margin-bottom: 10px;
       }
       .btn-row {
         a {
           text-decoration: none;
           font-weight: 600;
-          img {
-            margin-left: 16px;
-          }
         }
       }
     }
     .features-list {
-      width: 50%;
       display: flex;
-      justify-content: center;
+      @media (max-width: $tablet) {
+              margin-top: 80px;
+            }
       ul {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
-        padding: 0;
+        padding: 0 20px 20px 20px;
+        @media (max-width: $tablet) {
+              justify-content: center;
+              text-align: center;
+            }
         li {
           list-style: none;
           img {

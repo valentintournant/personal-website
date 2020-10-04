@@ -30,17 +30,4 @@ $widescreen: "1440px";
     width: 320px;
     min-width: 320px;
   }
-  .row {
-    display: flex;
-    align-items: center;
-    padding: 0 16px;
-  }
-}
-.container-fluid {
-  padding: 0 48px;
-  .row {
-    display: flex;
-    align-items: center;
-    padding: 0 16px;
-  }
 }
