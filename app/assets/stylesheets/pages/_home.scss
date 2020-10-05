@@ -108,7 +108,7 @@ header ul li a {
 .thumb {
   position: absolute;
   left: 50%;
-  bottom: 30px;
+  bottom: 40px;
   transform: translateX(-50%);
   display: flex;
 }
@@ -331,7 +331,7 @@ header ul li a {
       ul {
         display: flex;
         flex-wrap: wrap;
-        padding: 0 20px 20px 20px;
+        padding: -1px 20px 20px 20px;
         @media (max-width: $tablet) {
               justify-content: center;
               text-align: center;
@@ -353,7 +353,7 @@ header ul li a {
             font-weight: 300;
             color: #2a65b3;
             width: 270px;
-            margin: 16px 0 72px;
+            margin: 16px 0 45px;
             font-size: 1rem;
             @media (max-width: $widescreen) {
               font-size: 0.875rem;
