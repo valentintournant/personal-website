@@ -26,6 +26,7 @@ require("channels")
 import "bootstrap";
 import {imgSlider} from "../your_plugins/imgSlider";
 import {menuToggle} from "../your_plugins/menuToggle";
+import {animation} from "../your_plugins/animation";
 
 
 // Internal imports, e.g:
@@ -34,4 +35,5 @@ import {menuToggle} from "../your_plugins/menuToggle";
 document.addEventListener('turbolinks:load', () => {
   imgSlider();
   menuToggle();
+  animation();
 });

@@ -9,4 +9,3 @@ const menuToggle = () => {
   }
 }
 
-export {menuToggle};
