@@ -8,4 +8,4 @@ const menuToggle = () => {
     });
   }
 }
-
+export {menuToggle};

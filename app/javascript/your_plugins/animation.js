@@ -3,7 +3,7 @@ const animation = () => {
   const featuresContentP = document.querySelectorAll(".features-content p");
   const featureContentButton = document.querySelector(".features-content .btn-row");
   const featureList = document.querySelectorAll(".features-list li");
-  if (animation){
+  if (featuresContentTitle){
     const featuresTl = gsap.timeline();
     featuresTl
       .from([featuresContentTitle, featuresContentP, featuresContentButton], {
@@ -12,7 +12,7 @@ const animation = () => {
         duration: 0.6,
         ease: "powe3.out",
         stagger: {
-          amount: 0.2
+        amount: 0.2
         }
       })
       .from(featuresList, {
@@ -27,3 +27,5 @@ const animation = () => {
       });
     }
   }
+
+export {animation};
