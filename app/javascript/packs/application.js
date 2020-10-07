@@ -34,6 +34,6 @@ import {animation} from "../your_plugins/animation";
 
 document.addEventListener('turbolinks:load', () => {
   imgSlider();
-  console.log(menuToggle);
   menuToggle();
+  animation();
 });
