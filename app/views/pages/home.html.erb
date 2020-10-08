@@ -1,44 +1,44 @@
 <section class="sec">
-  <header class="header">
-    <%=image_tag "val2.png", class: "avatar"%>
-    <div class="toggleMenu"></div>
-      <ul class="navigation">
-        <li><a><%= link_to "Home", root_path %></a></li>
-        <li><a><%= link_to "Exercises", exercises_path %></a></li>
-        <li><a><%= link_to "Hire me!", hire_me_path %></a></li>
+    <header class="header">
+      <%=image_tag "val2.png", class: "avatar"%>
+      <div class="toggleMenu"></div>
+        <ul class="navigation">
+          <li><a><%= link_to "Home", root_path %></a></li>
+          <li><a><%= link_to "Exercises", exercises_path %></a></li>
+          <li><a><%= link_to "Hire me!", hire_me_path %></a></li>
+        </ul>
+    </header>
+    <div class="content">
+      <div class="textBox">
+        <h2>This is What <br><span>I Code</span></h2>
+        <p>Welcome to my website to show you my skills trough exercises and my different projects 💪 !
+        <br> I am passionate about code, curious and on the lookout for all new software and technical news 🤓</p>
+        <a href="">Clik me</a>
+      </div>
+      <div class="imgBox">
+        <%=image_tag "val2.png", class: "val"%>
+      </div>
+    </div>
+    <div>
+      <ul class="thumb">
+        <li class="logo" data-background="#fdda22"><%= image_tag "js.png" %></li>
+        <li class="logo" data-background="#2866f0"><%= image_tag "css.png" %></li>
+        <li class="logo" data-background="#f1652a"><%= image_tag "html.png" %></li>
+        <li class="logo" data-background="#ce422a"><%= image_tag "ruby.png" %></li>
       </ul>
-  </header>
-  <div class="content">
-    <div class="textBox">
-      <h2>This is What <br><span>I Code</span></h2>
-      <p>Welcome to my website to show you my skills trough exercises and my different projects 💪 !
-      <br> I am passionate about code, curious and on the lookout for all new software and technical news 🤓</p>
-      <a href="">Clik me</a>
+      <ul class="sci">
+        <li>
+          <%= link_to "https://github.com/valentintournant" do %>
+            <%= image_tag 'GitHub.png' %>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to "https://www.linkedin.com/in/valentin-tournant/" do %>
+            <%= image_tag 'linkedin.png' %>
+          <% end %>
+        </li>
+      </ul>
     </div>
-    <div class="imgBox">
-      <%=image_tag "val2.png", class: "val"%>
-    </div>
-  </div>
-
-  <ul class="thumb">
-      <li class="logo" data-background="#fdda22"><%= image_tag "js.png" %></li>
-      <li class="logo" data-background="#2866f0"><%= image_tag "css.png" %></li>
-      <li class="logo" data-background="#f1652a"><%= image_tag "html.png" %></li>
-      <li class="logo" data-background="#ce422a"><%= image_tag "ruby.png" %></li>
-  </ul>
-
-  <ul class="sci">
-    <li>
-      <%= link_to "https://github.com/valentintournant" do %>
-        <%= image_tag 'GitHub.png' %>
-      <% end %>
-    </li>
-    <li>
-      <%= link_to "https://www.linkedin.com/in/valentin-tournant/" do %>
-        <%= image_tag 'linkedin.png' %>
-      <% end %>
-    </li>
-  </ul>
 </section>
 
 <section id="features" class="features">

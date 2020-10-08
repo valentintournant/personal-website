@@ -34,7 +34,6 @@ const animation = () => {
     triggerHook: 0,
     reverse: false
   })
-  .addIndicators()
   .setTween(featuresTl)
   .addTo(controller);
   }
