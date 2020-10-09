@@ -27,6 +27,7 @@ import "bootstrap";
 import {imgSlider} from "../your_plugins/imgSlider";
 import {menuToggle} from "../your_plugins/menuToggle";
 import {animation} from "../your_plugins/animation";
+import {loadDynamicText} from "../your_plugins/typed";
 
 
 // Internal imports, e.g:
@@ -36,4 +37,5 @@ document.addEventListener('turbolinks:load', () => {
   imgSlider();
   menuToggle();
   animation();
+  loadDynamicText()
 });
