@@ -152,6 +152,43 @@ header ul li a {
   height: 60px;
   width: 60px;
 }
+// Wave
+section.wave {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #0c65b9;
+  overflow: hidden;
+  position: background;
+}
+
+section .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(wave.png);
+  background-size: 1000px 100px;
+}
+
+section .wave.wave1 {
+  animation: animate 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom:0;
+}
+@keyframes animate {
+  0%
+  {
+    background-position-x: 0;
+  }
+  100%
+  {
+    background-position-x: 1000px;
+  }
+}
 
 // media queries
 
@@ -371,5 +408,6 @@ header ul li a {
     }
   }
 }
+
 
 
