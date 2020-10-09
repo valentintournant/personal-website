@@ -1,12 +1,10 @@
 @import "../config/variables.scss";
-
 // Me section
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 section {
   position: relative;
   width: 100%;
@@ -18,7 +16,6 @@ section {
   background: #0c65b9;
   transition: 1.5s;
 }
-
 header {
   position: absolute;
   top: 0;
@@ -29,24 +26,20 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
 header .avatar {
   position: relative;
   border-radius: 50px;
   height: 80px;
   width: 80px;
-  border:2px solid white;
+  border: 2px solid white;
 }
-
 header ul {
   position: relative;
   display: flex;
 }
-
 header ul li {
   list-style: none;
 }
-
 header ul li a {
   display: inline-block;
   color: #fff;
@@ -54,19 +47,16 @@ header ul li a {
   text-decoration: none;
   font-size: 16px;
 }
-
 .content {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .content .textBox {
   position: relative;
   max-width: 600px;
 }
-
 .content .textBox h2 {
   color: #fff;
   font-size: 4em;
@@ -74,15 +64,12 @@ header ul li a {
   font-weight: 900;
   text-transform: uppercase;
 }
-
 .content .textBox h2 span {
   font-size: 2em;
 }
-
 .content .textBox p {
   color: #fff;
 }
-
 .content .textBox a {
   display: inline-block;
   margin-top: 20px;
@@ -94,7 +81,6 @@ header ul li a {
   text-decoration: none;
   text-transform: uppercase;
 }
-
 .content .imgBox img {
   max-height: 370px;
   right: 50px;
@@ -102,9 +88,8 @@ header ul li a {
   margin-top: -25px;
   justify-content: flex-end;
   border-radius: 100px;
-  border:2px solid white;
+  border: 2px solid white;
 }
-
 .thumb {
   position: absolute;
   left: 50%;
@@ -112,7 +97,6 @@ header ul li a {
   transform: translateX(-50%);
   display: flex;
 }
-
 .thumb li {
   list-style: none;
   display: inline-block;
@@ -120,15 +104,12 @@ header ul li a {
   cursor: pointer;
   transition: 0.5s;
 }
-
 .thumb li:hover {
   transform: translateY(-15px);
 }
-
 .thumb li img {
-   max-width: 40px;
+  max-width: 40px;
 }
-
 .sci {
   position: absolute;
   top: 50%;
@@ -139,11 +120,9 @@ header ul li a {
   align-items: center;
   flex-direction: column;
 }
-
 .sci li {
   list-style: none;
 }
-
 .sci li img {
   display: inline-block;
   filter: invert(1);
@@ -156,13 +135,13 @@ header ul li a {
 section.wave {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 0vh;
   background: #0c65b9;
   overflow: hidden;
-  position: background;
+  padding-top: 0px;
 }
 
-section .wave {
+section .mvt {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -171,43 +150,35 @@ section .wave {
   background: url(wave.png);
   background-size: 1000px 100px;
 }
-
-section .wave.wave1 {
-  animation: animate 30s linear infinite;
+section .mvt.wave1 {
+  animation: animate 10s linear infinite;
   z-index: 1000;
   opacity: 1;
   animation-delay: 0s;
-  bottom:0;
+  bottom: 0;
+
 }
 @keyframes animate {
-  0%
-  {
+  0% {
     background-position-x: 0;
   }
-  100%
-  {
+  100% {
     background-position-x: 1000px;
   }
 }
-
 // media queries
-
 @media (max-width: 991px) {
-
   section {
     padding: 40px;
     padding-bottom: 120px;
   }
-
   header {
     padding: 20 40px;
   }
-
   header .logo {
     position: relative;
     max-width: 60px;
   }
-
   header ul {
     position: fixed;
     top: 0;
@@ -223,8 +194,7 @@ section .wave.wave1 {
     visibility: hidden;
     opacity: 0;
   }
-
-    header ul li a {
+  header ul li a {
     display: inline-block;
     color: #111;
     font-weight: 400;
@@ -233,16 +203,13 @@ section .wave.wave1 {
     font-size: 2em;
     margin: 10px 0;
   }
-
   header ul li a:hover {
-   color: #2a65b3;
+    color: #2a65b3;
   }
-
   header ul.active {
     visibility: visible;
     opacity: 1;
   }
-
   .toggleMenu {
     position: relative;
     width: 40px;
@@ -254,7 +221,6 @@ section .wave.wave1 {
     z-index: 2;
     cursor: pointer;
   }
-
   .toggleMenu.active {
     background: url(close.png);
     background-position: center;
@@ -262,27 +228,22 @@ section .wave.wave1 {
     background-repeat: no-repeat;
     filter: invert(1);
   }
-
   .content {
     flex-direction: column;
     margin-top: 80px;
   }
-
   .content .textBox {
     position: relative;
     max-width: 100%;
     padding-right: 20px;
   }
-
   .content .textBox h2 {
     font-size: 3em;
   }
-
   .content .textBox a {
     font-size: 14px;
     padding: 8px 15px;
   }
-
   .content .imgBox {
     width: 100%;
     display: flex;
@@ -290,39 +251,33 @@ section .wave.wave1 {
     margin-top: 50px;
     justify-content: center;
   }
-
   .content .imgBox img {
     max-height: 300px;
   }
-
   .thumb li img {
     max-width: 40px;
   }
-
   .sci {
-  position: absolute;
-  top: 50%;
-  right: 0px;
-  transform: translateY(-50%);
-  background: #75b5e4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    background: #75b5e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
-
   .sci li img {
     height: 40px;
     width: 40px;
   }
 }
-
 // Features section
-
 .features {
   width: 100%;
   min-height: 100vh;
-  padding: 40px;
+  padding: 0 40px 0 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -337,9 +292,9 @@ section .wave.wave1 {
     display: flex;
     column-gap: 150px;
     @media (max-width: $tablet) {
-        flex-direction: column;
-        flex-wrap: wrap;
-      }
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
     .features-content {
       h3 {
         color: #2a65b3;
@@ -364,16 +319,16 @@ section .wave.wave1 {
     .features-list {
       display: flex;
       @media (max-width: $tablet) {
-              margin-top: 80px;
-            }
+        margin-top: 80px;
+      }
       ul {
         display: flex;
         flex-wrap: wrap;
         padding: -1px 20px 20px 20px;
         @media (max-width: $tablet) {
-              justify-content: center;
-              text-align: center;
-            }
+          justify-content: center;
+          text-align: center;
+        }
         li {
           list-style: none;
           img {
@@ -400,7 +355,6 @@ section .wave.wave1 {
             }
             @media (max-width: $mobile) {
               padding-right: 0px;
-
             }
           }
         }
@@ -408,6 +362,3 @@ section .wave.wave1 {
     }
   }
 }
-
-
-

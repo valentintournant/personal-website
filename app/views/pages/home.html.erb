@@ -2,18 +2,24 @@
   <header class="header">
     <%=image_tag "val2.png", class: "avatar"%>
     <div class="toggleMenu"></div>
-      <ul class="navigation">
-        <li><a><%= link_to "Home", root_path %></a></li>
-        <li><a><%= link_to "Exercises", exercises_path %></a></li>
-        <li><a><%= link_to "Hire me!", hire_me_path %></a></li>
-      </ul>
+    <ul class="navigation">
+      <li>
+        <a><%= link_to "Home", root_path %></a>
+      </li>
+      <li>
+        <a><%= link_to "Exercises", exercises_path %></a>
+      </li>
+      <li>
+        <a><%= link_to "Hire me!", hire_me_path %></a>
+      </li>
+    </ul>
   </header>
   <div class="content">
     <div class="textBox">
-      <h2>This is What <br><span>I Code</span></h2>
-      <p>Welcome to my website to show you my skills trough exercises and my different projects 💪 !
-      <br> I am passionate about code, curious and on the lookout for all new software and technical news 🤓</p>
-      <a href="">Clik me</a>
+      <h2>This is What<br>
+      <span>I Code</span></h2>
+      <p>Welcome to my website to show you my skills trough exercises and my different projects 💪 !<br>
+      I am passionate about code, curious and on the lookout for all new software and technical news 🤓</p><a href="">Clik me</a>
     </div>
     <div class="imgBox">
       <%=image_tag "val2.png", class: "val"%>
@@ -27,71 +33,53 @@
       <li class="logo" data-background="#ce422a"><%= image_tag "ruby.png" %></li>
     </ul>
     <ul class="sci">
-      <li>
-        <%= link_to "https://github.com/valentintournant" do %>
-          <%= image_tag 'GitHub.png' %>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to "https://www.linkedin.com/in/valentin-tournant/" do %>
-          <%= image_tag 'linkedin.png' %>
-        <% end %>
-      </li>
+      <li><%= link_to "https://github.com/valentintournant" do %><%= image_tag 'GitHub.png' %><%end %></li>
+      <li><%= link_to "https://www.linkedin.com/in/valentin-tournant/" do %><%= image_tag 'linkedin.png' %><%end %></li>
     </ul>
   </div>
-<!--   <div class="wave">
-    <div class="wave wave1"></div>
-  </div> -->
 </section>
 <section class="wave">
-  <div class="wave wave1"></div>
+  <div class="mvt wave1"></div>
 </section>
-
-<section id="features" class="features">
+<section class="features" id="features">
   <div class="container" id="features">
-      <div class="features-inner">
-        <div class="features-content">
-          <h3> A little more about me and who I am </h3>
-          <div>
-            <p>🚀 <strong>Trained</strong> at "The Wagon", geek and FullStack developer.</p>
-            <p>🤓 <strong>Passionate</strong> about IT, the web and new technologies.<br>
-            <p>⚡️ <strong>Expertise</strong> for the express development of MVP (project management, design, front, back and production).</p>
-            <p>💻 <strong>Realization</strong> of web applications, I put my experience and my advice to carry out your project.</p>
-          </div>
-          <div class="btn btn-outline-primary mt-3">
-            span<a><%= link_to '#' do %>
-            View quelque chose <%= image_tag "arrow-right.svg" %>
-            <% end %></a>
-          </div>
+    <div class="features-inner">
+      <div class="features-content">
+        <h3>A little more about me and who I am</h3>
+        <div>
+          <p>🚀 <strong>Trained</strong> at "The Wagon", geek and FullStack developer.</p>
+          <p>🤓 <strong>Passionate</strong> about IT, the web and new technologies.<br></p>
+          <p>⚡️ <strong>Expertise</strong> for the express development of MVP (project management, design, front, back and production).</p>
+          <p>💻 <strong>Realization</strong> of web applications, I put my experience and my advice to carry out your project.</p>
         </div>
-        <div class="features-list">
-          <ul>
-            <li><%= image_tag 'clip-globe.png' %>
-              <h5>Curious</h5>
-              <p>Stay open-minded and on the lookout for new technologies.</p>
-            </li>
-            <li><%= image_tag 'cherry-upgrade.png' %>
-              <h5>Motivated</h5>
-              <p>Solve complex problems efficiently.</p>
-            </li>
-            <li><%= image_tag 'gummy-pocket-knife.png' %>
-              <h5>Versatile</h5>
-              <p>Use different skills depending on the situation.</p>
-            </li>
-            <li><%= image_tag 'urban-209.png' %>
-              <h5>Teamwork</h5>
-              <p>Ability to identify with others and work collaboratively.</p>
-            </li>
-          </ul>
+        <div class="btn btn-outline-primary mt-3">
+          span<a><%= link_to '#' do %> View quelque chose <%= image_tag "arrow-right.svg" %> <%end %></a>
         </div>
       </div>
+      <div class="features-list">
+        <ul>
+          <li>
+            <%= image_tag 'clip-globe.png' %>
+            <h5>Curious</h5>
+            <p>Stay open-minded and on the lookout for new technologies.</p>
+          </li>
+          <li>
+            <%= image_tag 'cherry-upgrade.png' %>
+            <h5>Motivated</h5>
+            <p>Solve complex problems efficiently.</p>
+          </li>
+          <li>
+            <%= image_tag 'gummy-pocket-knife.png' %>
+            <h5>Versatile</h5>
+            <p>Use different skills depending on the situation.</p>
+          </li>
+          <li>
+            <%= image_tag 'urban-209.png' %>
+            <h5>Teamwork</h5>
+            <p>Ability to identify with others and work collaboratively.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
-
-
-
-
-
-
-
-
