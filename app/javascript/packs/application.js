@@ -28,7 +28,6 @@ import {imgSlider} from "../your_plugins/imgSlider";
 import {menuToggle} from "../your_plugins/menuToggle";
 import {animation} from "../your_plugins/animation";
 import {loadDynamicText} from "../your_plugins/typed";
-import {pageShow} from "../your_plugins/pageShow";
 
 
 // Internal imports, e.g:
