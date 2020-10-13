@@ -8,4 +8,4 @@ const loadDynamicText = () => {
   });
 }
 
-export { loadDynamicText };
+export {loadDynamicText};

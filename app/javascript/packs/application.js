@@ -38,5 +38,4 @@ document.addEventListener('turbolinks:load', () => {
   menuToggle();
   animation();
   loadDynamicText();
-  pageShow()
 });
