@@ -26,6 +26,8 @@ import {imgSlider} from "../your_plugins/imgSlider";
 import {menuToggle} from "../your_plugins/menuToggle";
 import {animation} from "../your_plugins/animation";
 import {loadDynamicText} from "../your_plugins/typed";
+import {slick} from "../your_plugins/slick";
+
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -35,4 +37,5 @@ document.addEventListener('turbolinks:load', () => {
   menuToggle();
   animation();
   loadDynamicText();
+  slick();
 });
