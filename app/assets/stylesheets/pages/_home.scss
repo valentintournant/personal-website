@@ -362,3 +362,22 @@ section .mvt.wave1 {
     }
   }
 }
+
+.container.slider {
+  max-width: 1040px;
+  margin: 100px auto;
+}
+.logo-slider h3 {
+  text-align: center;
+  color: #2a65b3;
+  font-size: 2.6rem;
+  line-height: 3.4rem;
+  width: 100%;
+  padding: 100px 40px 100px 40px;
+}
+.logo-slider .item {
+  img {
+    width: 50%;
+    }
+  }
+
