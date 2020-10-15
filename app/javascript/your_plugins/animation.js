@@ -7,7 +7,6 @@ const animation = () => {
   const featuresList = document.querySelectorAll(".features-list li");
   if (featuresContentTitle){
     const featuresTl = gsap.timeline();
-    console.log(featuresTl);
     featuresTl
     .from([featuresContentTitle, featuresContentP, featuresContentButton], {
         opacity: 0,

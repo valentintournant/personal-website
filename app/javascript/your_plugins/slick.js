@@ -1,4 +1,3 @@
-import $ from 'jquery';
 import 'slick-carousel';
 
 const slick = () => {
@@ -6,10 +5,10 @@ const slick = () => {
   if (menu){
     $(document).ready(function(){
       $('.logo-slider').slick({
-        slidesToShow: 6,
+        slidesToShow: 4,
         slidesToScroll: 1,
-        dots: true,
-        arrows: true,
+        dots: false,
+        arrows: false,
         autoplay: true,
         autoplaySpeed: 2000,
         infinite: true,
