@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 section {
   position: relative;
   width: 100%;
@@ -338,7 +339,7 @@ section .mvt.wave1 {
           h5 {
             color: #2a65b3;
             font-weight: 800;
-            font-size: 1.2rem;
+            font-size: 24px;
             margin: 0;
           }
           p {
@@ -347,7 +348,7 @@ section .mvt.wave1 {
             color: #2a65b3;
             width: 270px;
             margin: 16px 0 45px;
-            font-size: 1rem;
+            font-size: 16px;
             @media (max-width: $widescreen) {
               font-size: 0.875rem;
               text-justify: auto;
@@ -367,15 +368,52 @@ section .mvt.wave1 {
   max-width: 1040px;
   margin: 100px auto;
 }
-.logo-slider h3 {
+
+.container-slider h3 {
+  font-size: 2.6rem;
   text-align: center;
   color: #2a65b3;
-  font-size: 2.6rem;
-  line-height: 3.4rem;
-  width: 100%;
+  position: relative;
   padding: 100px 40px 100px 40px;
 }
+
 .logo-slider img {
-    width: 50%;
+    width: 100%;
+  }
+
+.logo-slider .item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #2a65b3;
+  min-height: 50px;
 }
+
+.logo-slider .slick-slide {
+  margin: 50px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff5722;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  color: #2a65b3;
+  font-size: 16px;
+}
+
+.logo-slider .item:hover {
+  display:block;
+  transition: all ease 0.3s;
+  transform: scale(1.1) translateY(-5px);
+}
+
+
+
+
 
