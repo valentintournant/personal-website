@@ -142,6 +142,15 @@ section.wave {
   padding-top: 0px;
 }
 
+section.wavewhite {
+  position: relative;
+  width: 100%;
+  min-height: 0vh;
+  background: #a4aab3;
+  overflow: hidden;
+  padding-top: 0px;
+}
+
 section .mvt {
   position: absolute;
   bottom: 0;
@@ -364,53 +373,35 @@ section .mvt.wave1 {
   }
 }
 
-.container.slider {
-  max-width: 1040px;
-  margin: 100px auto;
+.container-slider * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  background-color: #FFFFFF
 }
-
-.container-slider h3 {
-  font-size: 2.6rem;
+.container.slider {
+  max-width: 1040px
+}
+.container-slider h4 {
+  font-size: 32px;
   text-align: center;
   color: #2a65b3;
   position: relative;
-  padding: 100px 40px 100px 40px;
+  padding: 0 40px 50px 40px
 }
-
 .logo-slider img {
-    width: 100%;
-  }
-
+  width: 100%
+}
 .logo-slider .item {
   background-color: #fff;
   border-radius: 10px;
   padding: 15px;
   border: 1px solid #2a65b3;
-  min-height: 50px;
+  min-height: 50px
 }
-
 .logo-slider .slick-slide {
-  margin: 50px;
-}
-
-.slick-dots li.slick-active button:before {
-  color: #ff5722;
-}
-
-.slick-dots li button:before {
-  font-size: 12px;
-}
-
-.slick-next:before,
-.slick-prev:before {
-  color: #2a65b3;
-  font-size: 16px;
-}
-
-.logo-slider .item:hover {
-  display:block;
-  transition: all ease 0.3s;
-  transform: scale(1.1) translateY(-5px);
+  margin: 100px
 }
 
 
