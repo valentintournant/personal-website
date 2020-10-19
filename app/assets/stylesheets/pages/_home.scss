@@ -378,11 +378,14 @@ section .mvt.wave1 {
   padding: 0;
   box-sizing: border-box;
   outline: none;
-  background-color: #FFFFFF
+  background-color: #FFFFFF;
+
 }
+
 .container.slider {
-  max-width: 1040px
+  max-width: 1040px;
 }
+
 .container-slider h4 {
   font-size: 32px;
   text-align: center;
