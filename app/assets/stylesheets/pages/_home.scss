@@ -21,6 +21,7 @@ section {
   background: #303030;
   transition: 1.5s;
 }
+
 header {
   position: absolute;
   top: 0;
@@ -31,6 +32,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
 header .avatar {
   position: relative;
   border-radius: 50px;
@@ -279,7 +281,7 @@ section .mvt.wave1 {
   }
 }
 // Features section
-.features {
+section.features {
   width: 100%;
   min-height: 100vh;
   padding: 0 40px 0 40px;
