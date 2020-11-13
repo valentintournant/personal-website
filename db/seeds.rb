@@ -2,7 +2,7 @@
 puts "destroy exercises"
 Exercise.destroy_all
 
-# exercises-JS
+# exercises-
 puts "create exercise"
 
 exercise_1_js = Exercise.create!(
@@ -41,14 +41,29 @@ exercise_4_js = Exercise.create!(
   language: "js"
 )
 
-exercise_1_ruby = Exercise.create!(
+puts "You have done #{Exercise.count} exercise"
+
+# projetcs
+puts "destroy projects"
+Project.destroy_all
+
+# project
+puts "create project"
+
+project_1_ruby = Project.create!(
   name: "Papel",
-  description: "Creation of an inventory to practice classes. The aim is to better organize my code by grouping similar functionalities into a single class",
+  description: "Papel, Make your receipts usefull again! Papel is a revolutionary platform allowing you to store, manage and share your receipts!",
   category: "Ruby",
   time: 2,
-  number: 4,
+  number: 1,
   language: "ruby"
 )
 
 
-puts "You have done #{Exercise.count} exercise"
+
+
+
+
+
+
+
