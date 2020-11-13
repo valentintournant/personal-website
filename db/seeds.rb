@@ -55,7 +55,6 @@ project_1_ruby = Project.create!(
   description: "Papel, Make your receipts usefull again! Papel is a revolutionary platform allowing you to store, manage and share your receipts!",
   category: "Ruby",
   time: 2,
-  number: 1,
   language: "ruby"
 )
 
