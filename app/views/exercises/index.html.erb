@@ -2,42 +2,26 @@
 <div class="exercises">
   <div class="container" id="exercise">
     <div class="d-flex justify-content-center">
-      <h1>Exercises <i class="highlighted highlighted-javascript">JS</i>🤓</h1>
-    </div>
-  </div>
-
-  <div class="cards">
-    <% @exercises.each do |exercise| %>
-      <div class="exercise-card">
-        <div class="badge">Hot</div>
-        <div class="exercise-tumb">
-          <%= image_tag "js.png" %>
-        </div>
-        <div class="exercise-details">
-          <span class="exercise-category"><%=exercise.category%></span>
-            <h4 data-turbolinks="false"><%= link_to exercise.name, "exercises_js/#{exercise.number}/exercise_#{exercise.number}.html" %></h4>
-              <p><%= exercise.description%></p>
-          <div class= "card-line-header-x"></div>
-          <div class="exercise-card-stats clearfix ">
-            <div class="one-third">
-              <div class="stat"><%= exercise.number %><sup>st</sup></div>
-              <div class="stat-value">Training</div>
-            </div>
-            <div class="one-third">
-              <div class="stat"><%= exercise.time%></div>
-              <div class="stat-value">Minutes</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    <% end %>
-  </div>
-
-  <!-- Other-exercice -->
-  <div class="card-container">
-    <div class="d-flex justify-content-center">
-      <h1>In
-        <i class="highlighted highlighted-ruby"> progress </i>🤩</h1>
+      <h1>
+        Exercises
+        <i class="highlighted highlighted-javascript">JS</i>🤓
+      </h1>
     </div>
   </div>
 </div>
+
+  <%= render partial: 'cards-exercises', locals: {exercises: @exercises_js} %>
+
+  <!-- Other-exercice -->
+<div class="card-container">
+  <div class="container" id="exercise">
+    <div class="d-flex justify-content-center">
+      <h1>
+        In
+        <i class="highlighted highlighted-ruby"> progress </i>🤩
+      </h1>
+    </div>
+  </div>
+</div>
+
+  <%= render partial: 'cards-exercises', locals: {exercises: @exercises_ruby} %>

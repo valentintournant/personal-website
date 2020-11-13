@@ -11,6 +11,7 @@ exercise_1_js = Exercise.create!(
   category: "Javascript",
   time: 20,
   number: 1,
+  language: "js"
 )
 
 exercise_2_js = Exercise.create!(
@@ -19,6 +20,7 @@ exercise_2_js = Exercise.create!(
   category: "Javascript",
   time: 10,
   number: 2,
+  language: "js"
 )
 
 exercise_3_js = Exercise.create!(
@@ -27,6 +29,7 @@ exercise_3_js = Exercise.create!(
   category: "Javascript",
   time: 30,
   number: 3,
+  language: "js"
 )
 
 exercise_4_js = Exercise.create!(
@@ -35,6 +38,17 @@ exercise_4_js = Exercise.create!(
   category: "Javascript",
   time: 15,
   number: 4,
+  language: "js"
 )
+
+exercise_1_ruby = Exercise.create!(
+  name: "Papel",
+  description: "Creation of an inventory to practice classes. The aim is to better organize my code by grouping similar functionalities into a single class",
+  category: "Ruby",
+  time: 2,
+  number: 4,
+  language: "ruby"
+)
+
 
 puts "You have done #{Exercise.count} exercise"
