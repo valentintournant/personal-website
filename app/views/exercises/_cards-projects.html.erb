@@ -7,14 +7,10 @@
       </div>
       <div class="exercise-details">
         <span class="exercise-category"><%=project.category%></span>
-          <h4 data-turbolinks="false"><%= link_to project.name, "exercises_#{exercise.language}/#{exercise.number}/exercise_#{exercise.number}.html" %></h4>
+          <h4 data-turbolinks="false"><%= link_to project.name, "https://papel-app.herokuapp.com/" %></h4>
             <p><%= project.description%></p>
         <div class= "card-line-header-x"></div>
         <div class="exercise-card-stats clearfix ">
-          <div class="one-third">
-            <div class="stat"><%= project.number %><sup>st</sup></div>
-            <div class="stat-value">Project</div>
-          </div>
           <div class="one-third">
             <div class="stat"><%= project.time%></div>
             <div class="stat-value">Weeks</div>
