@@ -55,11 +55,20 @@ project_1_ruby = Project.create!(
   description: "Papel, Make your receipts usefull again! Papel is a revolutionary platform allowing you to store, manage and share your receipts!",
   category: "Ruby",
   time: 2,
-  language: "ruby"
+  language: "ruby",
+  url: "https://papel-app.herokuapp.com/"
 )
 
+project_2_ruby = Project.create!(
+  name: "Alpha Blog",
+  description: "Papel, Make your receipts usefull again! Papel is a revolutionary platform allowing you to store, manage and share your receipts!",
+  category: "Ruby",
+  time: 3,
+  language: "ruby",
+  url: "https://alpha-blog-vt.herokuapp.com/login/"
+)
 
-
+puts "You have done #{Project.count} project"
 
 
 
