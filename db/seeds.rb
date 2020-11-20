@@ -61,11 +61,30 @@ project_1_ruby = Project.create!(
 
 project_2_ruby = Project.create!(
   name: "Alpha Blog",
-  description: "Papel, Make your receipts usefull again! Papel is a revolutionary platform allowing you to store, manage and share your receipts!",
+  description: "Alpha blog is a simple web app where you can create, read and delete articles!",
   category: "Ruby",
   time: 3,
   language: "ruby",
   url: "https://alpha-blog-vt.herokuapp.com/login/"
+)
+
+project_3_ruby = Project.create!(
+  name: "Message Me",
+  description: "Message Me is a simple web app where you can create a chat with people in real time!",
+  category: "Ruby",
+  time: 3,
+  language: "ruby",
+  url: "https://alpha-blog-vt.herokuapp.com/login/"
+)
+
+project_3_ruby = Project.create!(
+  name: "Finance Tracker",
+  description: "Finance tracker is an application that allows you to follow your favorite stocks!
+                Thanks to the IEX Cloud API you can follow the evolution of prices in direct time. Also, add your friends and track their stocks too!",
+  category: "Ruby",
+  time: 3,
+  language: "ruby",
+  url: "https://finance-tracker-app-vt.herokuapp.com/users/sign_in"
 )
 
 puts "You have done #{Project.count} project"
