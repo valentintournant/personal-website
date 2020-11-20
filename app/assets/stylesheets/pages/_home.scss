@@ -10,7 +10,7 @@ body {
   margin: 0 0 55px 0;
 }
 
-section {
+section.sec {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -142,13 +142,13 @@ header ul li a {
 section.wave {
   position: relative;
   width: 100%;
-  min-height: 0vh;
+  min-height: 100px;
   background: #303030;
   overflow: hidden;
   padding-top: 0px;
 }
 
-section .mvt {
+section.wave .mvt {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -157,7 +157,7 @@ section .mvt {
   background: asset-url("wave.png");
   background-size: 1000px 100px;
 }
-section .mvt.wave1 {
+section.wave .mvt.wave1 {
   animation: animate 10s linear infinite;
   z-index: 1000;
   opacity: 1;
