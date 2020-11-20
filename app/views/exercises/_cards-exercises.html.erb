@@ -7,7 +7,7 @@
       </div>
       <div class="exercise-details">
         <span class="exercise-category"><%=exercise.category%></span>
-          <h4 data-turbolinks="false"><%= link_to exercise.name, "exercises_#{exercise.language}/#{exercise.number}/exercise_#{exercise.number}.html" %></h4>
+          <h4 data-turbolinks="false"><%= link_to exercise.name, "exercises_#{exercise.language}/#{exercise.number}/exercise_#{exercise.number}.html", target: :_blank %></h4>
             <p><%= exercise.description%></p>
         <div class= "card-line-header-x"></div>
         <div class="exercise-card-stats clearfix ">
