@@ -50,7 +50,23 @@ Project.destroy_all
 # project
 puts "create project"
 
-project_1_ruby = Project.create!(
+
+
+
+project_2_ruby = Project.create!(
+  name: "BomBom",
+  description: "BomBom, is a Airbnb Clone! If you want to rent equipment around your home thanks to geolocation, use BomBom!",
+  category: "Ruby",
+  time: 2,
+  language: "ruby",
+  url: "https://boombooom.herokuapp.com/"
+)
+
+
+
+
+
+project_2_ruby = Project.create!(
   name: "Papel",
   description: "Papel, Make your receipts usefull again! Papel is a revolutionary platform allowing you to store, manage and share your receipts!",
   category: "Ruby",
@@ -59,7 +75,7 @@ project_1_ruby = Project.create!(
   url: "https://papel-app.herokuapp.com/"
 )
 
-project_2_ruby = Project.create!(
+project_3_ruby = Project.create!(
   name: "Alpha Blog",
   description: "Alpha blog is a simple web app where you can create, read and delete articles!",
   category: "Ruby",
@@ -68,7 +84,7 @@ project_2_ruby = Project.create!(
   url: "https://alpha-blog-vt.herokuapp.com/login/"
 )
 
-project_3_ruby = Project.create!(
+project_4_ruby = Project.create!(
   name: "Message Me",
   description: "Message Me is a simple web app where you can create a chat with people in real time!",
   category: "Ruby",
@@ -77,7 +93,7 @@ project_3_ruby = Project.create!(
   url: "https://alpha-blog-vt.herokuapp.com/login/"
 )
 
-project_3_ruby = Project.create!(
+project_5_ruby = Project.create!(
   name: "Finance Tracker",
   description: "Finance tracker is an application that allows you to follow your favorite stocks!
                 Thanks to the IEX Cloud API you can follow the evolution of prices in direct time. Also, add your friends and track their stocks too!",
