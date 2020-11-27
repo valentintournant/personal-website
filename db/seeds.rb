@@ -6,7 +6,7 @@ Exercise.destroy_all
 puts "create exercise"
 
 exercise_1_js = Exercise.create!(
-  name: "Drum Kit",
+  name: "Drum Kit 🥁",
   description: "Creation of a virtual drum kit that produces a sound when you press the associated key!",
   category: "Javascript",
   time: 20,
@@ -15,7 +15,7 @@ exercise_1_js = Exercise.create!(
 )
 
 exercise_2_js = Exercise.create!(
-  name: "Strings Project",
+  name: "Strings Project 👨‍🎓",
   description: "Creation of a name variations table that shows you some variations of the name you enter",
   category: "Javascript",
   time: 10,
@@ -24,8 +24,8 @@ exercise_2_js = Exercise.create!(
 )
 
 exercise_3_js = Exercise.create!(
-  name: "Arrays project",
-  description: "Creation of a Grade statistics app.It's a web app that allows you to enter the grades of your students",
+  name: "Arrays project 🗒",
+  description: "Creation of a Grade statistics app. It's a web app that allows you to enter the grades of your students",
   category: "Javascript",
   time: 30,
   number: 3,
@@ -33,7 +33,7 @@ exercise_3_js = Exercise.create!(
 )
 
 exercise_4_js = Exercise.create!(
-  name: "Inventory project",
+  name: "Inventory project 📝",
   description: "Creation of an inventory to practice classes. The aim is to better organize my code by grouping similar functionalities into a single class",
   category: "Javascript",
   time: 15,
@@ -51,7 +51,7 @@ Project.destroy_all
 puts "create project"
 
 project_2_ruby = Project.create!(
-  name: "BomBom",
+  name: "BomBom ⭐️",
   description: "BomBom, is a Airbnb Clone! If you want to rent equipment around your home thanks to geolocation, use BomBom!",
   category: "Ruby",
   time: 1,
@@ -59,7 +59,7 @@ project_2_ruby = Project.create!(
   url: "https://boombooom.herokuapp.com/"
 )
 project_2_ruby = Project.create!(
-  name: "Papel",
+  name: "Papel ⭐️⭐️🥵",
   description: "Papel, Make your receipts usefull again! Papel is a revolutionary platform allowing you to store, manage and share your receipts!",
   category: "Ruby",
   time: 2,
@@ -68,7 +68,7 @@ project_2_ruby = Project.create!(
 )
 
 project_3_ruby = Project.create!(
-  name: "Alpha Blog",
+  name: "Alpha Blog ⭐️⭐️😎",
   description: "Alpha blog is a simple web app where you can create, read and delete articles!",
   category: "Ruby",
   time: 1,
@@ -77,7 +77,7 @@ project_3_ruby = Project.create!(
 )
 
 project_4_ruby = Project.create!(
-  name: "Message Me",
+  name: "Message Me ⭐️⭐️🤓",
   description: "Message Me is a simple web app where you can create a chat with people in real time!",
   category: "Ruby",
   time: 1,
@@ -86,7 +86,7 @@ project_4_ruby = Project.create!(
 )
 
 project_5_ruby = Project.create!(
-  name: "Finance Tracker",
+  name: "Finance Tracker ⭐️⭐️💰",
   description: "Finance tracker is an application that allows you to follow your favorite stocks!
                 Thanks to the IEX Cloud API you can follow the evolution of prices in direct time. Also, add your friends and track their stocks too!",
   category: "Ruby",
