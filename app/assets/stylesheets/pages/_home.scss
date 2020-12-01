@@ -292,11 +292,11 @@ section.features {
   transition: 1.5s;
 }
 
-.container {
-  margin-top: 10vh;
-  padding-left: 0px;
+.features {
   .features-inner {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     column-gap: 150px;
     @media (max-width: $tablet) {
       flex-direction: column;
