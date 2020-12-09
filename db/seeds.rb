@@ -41,6 +41,15 @@ exercise_4_js = Exercise.create!(
   language: "js"
 )
 
+exercise_5_js = Exercise.create!(
+  name: "Data visualisation 📝",
+  description: "Creation of a Chart representing the browser usage data in 2019. The aim is the representation of information in the form of a chart with chart.js",
+  category: "Javascript",
+  time: 30,
+  number: 5,
+  language: "js"
+)
+
 puts "You have done #{Exercise.count} exercise"
 
 # projetcs

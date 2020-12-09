@@ -7,6 +7,7 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
 // or the `imagePath` JavaScript helper below.
@@ -28,7 +29,7 @@ import {animation} from "../your_plugins/animation";
 import {loadDynamicText} from "../your_plugins/typed";
 import {slick} from "../your_plugins/slick";
 import {apple} from "../your_plugins/apple";
-
+import {chartjs} from "../your_plugins/chartjs";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
@@ -39,4 +40,5 @@ document.addEventListener('turbolinks:load', () => {
   loadDynamicText();
   slick();
   apple();
+  chartjs();
 });
