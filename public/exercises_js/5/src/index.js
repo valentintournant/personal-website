@@ -9,7 +9,7 @@ const colors = {
   safari: "#25AEEE",
   chrome: "#FECD52",
   firefox: "#FD344B",
-  edge: "#57D269",
+  edge: "##4cf16b",
 };
 
 const render = (type) => {
