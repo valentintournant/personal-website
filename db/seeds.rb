@@ -50,6 +50,15 @@ exercise_5_js = Exercise.create!(
   language: "js"
 )
 
+exercise_6_js = Exercise.create!(
+  name: "Built-in form validation 📑",
+  description: "creation of a registration form for a gym app that also validates the user's input.",
+  category: "Javascript",
+  time: 30,
+  number: 6,
+  language: "js"
+)
+
 puts "You have done #{Exercise.count} exercise"
 
 # projetcs
