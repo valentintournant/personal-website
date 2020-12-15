@@ -52,7 +52,7 @@ exercise_5_js = Exercise.create!(
 
 exercise_6_js = Exercise.create!(
   name: "Built-in form validation 📑",
-  description: "Creation of a registration form for a gym app that also validates the user's input.",
+  description: "Creation of a registration form for a gym app that also validates the user's input",
   category: "Javascript",
   time: 30,
   number: 6,
@@ -61,7 +61,7 @@ exercise_6_js = Exercise.create!(
 
 exercise_7_js = Exercise.create!(
   name: "Instant search project 🔎",
-  description: "Creation of a an instant search for a spaceships dataset.",
+  description: "Creation of a an instant search for a spaceships dataset",
   category: "Javascript",
   time: 30,
   number: 7,
