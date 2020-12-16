@@ -68,6 +68,16 @@ exercise_7_js = Exercise.create!(
   language: "js"
 )
 
+exercise_8_js = Exercise.create!(
+  name: "Instant search project 🔎",
+  description: "Practice the fetch & DOM chapters by building a web app that lists the repositories of a github user using the official Github API!",
+  category: "Javascript",
+  time: 60,
+  number: 8,
+  language: "js"
+)
+
+
 puts "You have done #{Exercise.count} exercise"
 
 # projetcs
